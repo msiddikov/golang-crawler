@@ -49,7 +49,7 @@ func main() {
 }
 ```
 
-### type crawler.UrlInfo
+## type crawler.UrlInfo
 
 
 ```go
