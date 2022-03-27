@@ -11,7 +11,7 @@ Crawls the given URL recursive through internal links and returns []crawler.UrlI
 Usage:
 ```go
   var res []crawler.UrlInfo
-	res := crawler.Start(url, 5, 100)
+  res := crawler.Start(url, 5, 100)
 ```
 **crawler.Start**(url string, depth int, threadsNumber int) []UrlInfo <br>
   **url:**  entry point <br>
