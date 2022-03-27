@@ -1,4 +1,4 @@
-module github.com/msiddikov/crawler
+module github.com/msiddikov/golang-crawler
 
 go 1.17
 

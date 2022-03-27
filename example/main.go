@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/msiddikov/crawler"
+	crawler "github.com/msiddikov/golang-crawler"
 )
 
 func main() {

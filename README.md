@@ -17,7 +17,23 @@ Usage:
   **url:**  entry point <br>
   **depth:** - depth of recursion, set -1 to crawl through all links <br>
   **threadsNumber:** - number of concurrent treads, set -1 to run without limitation <br>
-### Example:
+
+## type crawler.UrlInfo
+
+
+```go
+	UrlInfo struct {
+		Url        string
+		Origin     string
+		IsValid    bool
+		Err        error
+		Title      string
+		IsExternal bool
+	}
+```
+
+## Example:
+
 ```go
 package main
 
@@ -48,19 +64,8 @@ func main() {
 	fmt.Printf("Found %v links in : %v seconds \nValid links: %v \nBroken links: %v", len(res), d.Seconds(), valid, invalid)
 }
 ```
-
-## type crawler.UrlInfo
-
-
+Run to see the output
 ```go
-	UrlInfo struct {
-		Url        string
-		Origin     string
-		IsValid    bool
-		Err        error
-		Title      string
-		IsExternal bool
-	}
+  go run example/main.go
 ```
-
 
